@@ -1,4 +1,4 @@
-// Thin client for the WheelSync FastAPI backend.
+﻿// Thin client for the WheelSync FastAPI backend.
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 // Expo inlines EXPO_PUBLIC_* variables from .env at build time (see .env.example).
