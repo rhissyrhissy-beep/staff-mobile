@@ -77,14 +77,14 @@ export default function JobDetailScreen({ route, navigation }) {
           )}
 
           <Pressable
-            onPress={() => navigation.navigate('Inspection', { bookingId: job.id, type: 'pre_rental' })}
+            onPress={() => navigation.navigate('Inspection', { bookingId: job.id, type: 'pre_rental', job })}
             style={{ backgroundColor: colors.bgSurface2, borderRadius: 12, paddingVertical: 14, alignItems: 'center', borderWidth: 1, borderColor: colors.border }}
           >
             <Text style={{ color: colors.textPrimary, fontWeight: '700' }}>Do pre-rental inspection</Text>
           </Pressable>
 
           <Pressable
-            onPress={() => navigation.navigate('Inspection', { bookingId: job.id, type: 'post_rental' })}
+            onPress={() => navigation.navigate('Inspection', { bookingId: job.id, type: 'post_rental', job })}
             style={{ backgroundColor: colors.bgSurface2, borderRadius: 12, paddingVertical: 14, alignItems: 'center', borderWidth: 1, borderColor: colors.border }}
           >
             <Text style={{ color: colors.textPrimary, fontWeight: '700' }}>Do post-rental inspection</Text>
